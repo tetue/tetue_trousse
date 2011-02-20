@@ -1,0 +1,28 @@
+/* --------------------------------------------------------------
+
+   tetue_trousse.css
+   Styles anecdotiques de la trousse a tetue
+   (c) romy.tetue.net - 2009
+
+-------------------------------------------------------------- */
+
+/* Boutons d'admin SPIP */
+.spip-admin-bloc,
+.spip-admin-float { position: fixed !important; top: 0; right: 25% !important; white-space: nowrap; }
+.spip-admin-bloc, .spip-admin-bloc *,
+.spip-admin-float, .spip-admin-float * { font-size: 100% !important; }
+a.spip-admin-boutons, a:hover.spip-admin-boutons { margin: 0 !important; padding: .4em 1em !important; background: #666 !important; border: 0 !important; color: #fff !important; text-decoration: none; }
+a.spip-admin-boutons { margin: auto !important; opacity: .7; -moz-border-radius-bottomleft: .3em; -moz-border-radius-bottomright: .3em; }
+a:hover.spip-admin-boutons { opacity: 1; }
+@media handheld { .spip-admin-float, .spip-admin-boutons { display: none !important; } }
+@media print { .spip-admin-float, .spip-admin-boutons { display: none !important; } }
+
+/* Amazon / tetue-21 */
+.amazon { display: block; width: 120px; min-height: 240px; }
+.amazon.amazon-right { float: right; margin: 0 0 .2em 1em; }
+.amazon.amazon-left { float: left; margin: 0 1em .2em 0; }
+@media handheld { .amazon { display: none; } }
+@media print { .amazon { display: none; } }
+
+/* accesskey */
+/*a[accesskey]:after { background: transparent; content: "\0000a0(" attr(accesskey) ")"; }*/

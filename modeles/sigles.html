@@ -1,0 +1,14 @@
+<B_sigles>
+<table class="spip" summary="Liste des sigles et acronymes utilis&eacute;s dans les pages de ce site">
+<caption>Sigles et acronymes utilis&eacute;s sur ce site</caption>
+<thead><tr class='row_first'><th scope='col'>Sigle</th><th scope='col'>Signification</th></tr></thead>
+<tbody>
+	<BOUCLE_sigles(FORMS_DONNEES) {id_form=1}{tri_donnee ligne_1}>
+	<tr[ class="(#COMPTEUR_BOUCLE|modulo{2}|?{row_even,row_odd})"]>
+		<td>#LESVALEURS{ligne_1,' '}</td>
+		<td>[(#LESVALEURS{texte_1,' '}|PtoBR)]</td>
+	</tr>
+	</BOUCLE_sigles>
+</tbody>
+</table>
+</B_sigles>

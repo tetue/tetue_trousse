@@ -1,0 +1,2 @@
+[(#REM) Si le plugin agenda est actif, on diffuse le flux iCal des evenements, sinon rien :
+][(#PLUGIN{agenda}|?{#INCLURE{fond=agenda-ical},#INCLURE{fond=404}})]

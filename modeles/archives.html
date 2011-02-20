@@ -1,0 +1,17 @@
+<B_archives>
+	<BOUCLE_archives(ARTICLES) {id_secteur !IN 1} {!par date}>
+	[
+	[(#COMPTEUR_BOUCLE|>{1}|?{</ul></dd></dt></dl>})]
+	<dl><dt class="year"><h2 class="big">(#DATE|affdate{Y}|unique{annee}|concat{'-01'}|annee)</h2>
+	][
+		[(#COMPTEUR_BOUCLE|>{1}|?{</ul></dd>})]
+		<dd><strong>(#DATE|affdate{Y-m}|unique{mois}|concat{'-01'}|affdate_mois_annee)</strong>
+		<ul>]
+				<li>[(#DATE|affdate{d}) | ]<a href="#URL_ARTICLE"}>#TITRE</a></li>
+
+				</BOUCLE_archives>
+			</ul>
+		</dd>
+		</dt>
+	</dl>
+</B_archives>

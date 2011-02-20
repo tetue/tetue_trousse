@@ -1,0 +1,26 @@
+<div id="plan">
+<BOUCLE_secteurs(RUBRIQUES) {racine}{id_rubrique!=1} {par num titre, num id_rubrique}{!par date}>
+
+	<h2><a href="#URL_RUBRIQUE">#TITRE</a></h2>
+
+	<B_articles>
+	<ul class="spip">
+		<BOUCLE_articles(ARTICLES) {id_rubrique} {par num titre}{!par date}>
+		<li class="spip"><a href="#URL_ARTICLE">#TITRE</a></li>
+		</BOUCLE_articles>
+	</ul>
+	</B_articles>
+
+	<B_rubriques>
+	<ul class="spip">
+		<BOUCLE_rubriques(RUBRIQUES) {id_parent} {par num titre}{!par date}>
+		<li class="spip"><strong><a href="#URL_RUBRIQUE">#TITRE</a></strong>
+			<BOUCLE_articles_suite(BOUCLE_articles)> </BOUCLE_articles_suite>
+			<BOUCLE_sous_rubriques(BOUCLE_rubriques)> </BOUCLE_sous_rubriques>
+		</li>
+		</BOUCLE_rubriques>
+	</ul>
+	</B_rubriques>
+
+</BOUCLE_secteurs>
+</div><!--#plan-->

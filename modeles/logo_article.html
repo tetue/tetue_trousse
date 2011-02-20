@@ -1,0 +1,10 @@
+<BOUCLE_doc(DOCUMENTS){id_article}{extension IN jpg,gif,png}{par date}{0,1}>#SET{logo_document,#LOGO_DOCUMENT}</BOUCLE_doc>
+<BOUCLE_rub(RUBRIQUES){id_rubrique}>#SET{logo_rubrique,#LOGO_RUBRIQUE}</BOUCLE_rub>
+<BOUCLE_article(ARTICLES){id_article}>#SET{logo_rubrique,#LOGO_RUBRIQUE}</BOUCLE_article><//B_rub><//B_doc>
+[(#LOGO_ARTICLE||sinon{
+	[(#GET{logo_document}|sinon{
+		[(#GET{logo_rubrique}|sinon{
+			[(#LOGO_SITE_SPIP||image_nb|image_alpha{90}|sinon{[<img src="(#CHEMIN{img/spip_logos.png})" alt="" />]})]
+		})]
+	})]
+}|image_passe_partout{50,50}|image_recadre{50,50,center}|inserer_attribut{class,spip_logos})]

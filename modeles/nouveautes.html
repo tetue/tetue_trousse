@@ -1,0 +1,24 @@
+<B_nouveautes>
+<h2 class="spip"><:derniers_articles:></h2>
+[(#ANCRE_PAGINATION|vide)]
+<ul class="spip">
+	<BOUCLE_nouveautes(ARTICLES){!par date}{pagination}{0,50}>
+	<li class="spip">[(#DATE|affdate{d/m/Y H:i})&nbsp;: ]<a href="#URL_ARTICLE">#TITRE</a></li>
+	</BOUCLE_nouveautes>
+</ul>
+[<p class="pagination"(#PAGINATION{page})</p>]
+</B_nouveautes>
+
+<h2 class="spip"><:ical_titre_rss:>&nbsp;RSS&nbsp;2.0</h2>
+<p><:ical_texte_rss:></p>
+<p><:ical_texte_rss_articles:></p>
+<textarea class="spip_cadre" dir="ltr">#URL_PAGE{backend}</textarea>
+
+<h2 class="spip"><:ical_titre_js:></h2>
+<p><:ical_texte_js:></p>
+<textarea class="spip_cadre" dir="ltr"><script type="text/javascript" src="#URL_PAGE{distrib}"></script></textarea>
+
+<h2 class="spip"><:icone_calendrier:>&nbsp;iCal</h2>
+<p><:calendrier_synchro:></p>
+<p><:ical_texte_public:></p>
+<textarea class="spip_cadre" dir="ltr">[(#URL_PAGE{ical}|replace{^http,webcal})]</textarea>

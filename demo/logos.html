@@ -1,0 +1,22 @@
+<B_logos>
+#ANCRE_PAGINATION
+<style>
+td { min-width: 150px; text-align: center; }
+</style>
+<table>
+	<thead>
+		<th>ID</th>
+		<th>MODELE</th>
+		<th>LOGO_ARTICLE</th>
+		<th>LOGO_ARTICLE_RUBRIQUE</th>
+		<th>LOGO_RUBRIQUE</th>
+	</thead>
+	<BOUCLE_logos(ARTICLES){!par id_article}{pagination 100}><tr>
+		<td><a href="#URL_ARTICLE"[ title="(#TITRE|attribut_html)"]>#ID_ARTICLE</a></td>
+		<td>#MODELE{logo_article}</td>
+		<td>[(#LOGO_ARTICLE||image_reduire{0,150})]</td>
+		<td>[(#LOGO_ARTICLE_RUBRIQUE||image_reduire{0,150})]</td>
+		<td>[(#LOGO_RUBRIQUE||image_reduire{0,150})]</td>
+	</tr></BOUCLE_logos>
+</table>
+#PAGINATION</B_logos>

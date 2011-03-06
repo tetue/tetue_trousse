@@ -6,6 +6,14 @@
 
 -------------------------------------------------------------- */
 
+/* prevnext */
+.prevnext { display: block; overflow: hidden; }
+.prevnext .prev,
+.prevnext .next { display: block; width: 50%; }
+.prevnext .prev { float: left; text-align: left; }
+.prevnext .next { float: right; text-align: right; }
+.prevnext .sep { display: none; }
+
 /* Amazon / tetue-21 */
 .amazon { display: block; width: 120px; min-height: 240px; }
 .amazon.amazon-right { float: right; margin: 0 0 .2em 1em; }

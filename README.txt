@@ -1,0 +1,1 @@
+La trousse a Tetue met a disposition des reglages par defaut pour SPIP 2, corrections typographiques, modeles pour pages annexes (plan de site, accesskey, formulaire de contact, etc.) et autres preferences. Pour en savoir plus : http://romy.tetue.net/tetue_trousse

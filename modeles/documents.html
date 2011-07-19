@@ -1,0 +1,15 @@
+<B_documents>
+<div class="documents" id="documents#ID_ARTICLE">
+	<ul>
+		<BOUCLE_documents(DOCUMENTS) {id_article>0}{id_article ?}{id_document ?} {distant=non}{mode=document}{extension !IN jpg,gif,png} {par date}{par titre, type_document, taille}>
+		<li class="clearfix">
+			<span class="download"><a href="#URL_DOCUMENT" type="#MIME_TYPE" title="<:bouton_telecharger:>[ (#FICHIER|basename)]" class="spip_doc[ (#EXTENSION|attribut_html)]">
+			[<img src="(#CHEMIN{vignettes/#EXTENSION.png}|image_reduire{40}|extraire_attribut{src})" class="spip_logos" />]
+			[<strong class="#EDIT{titre} titre">(#TITRE|sinon{[(#FICHIER|basename)]})</strong>]</a></span>
+			<small class="info_document">([<abbr title="<:info_document:> #TYPE_DOCUMENT" class="ext">(#EXTENSION|strtoupper)</abbr> - ][<strong>(#TAILLE|taille_en_octets)</strong>][(#LARGEUR|?{[ - (#LARGEUR)[ x (#HAUTEUR) pixels]],''})])[ - (#DATE|affdate{d/m/y})].</small>
+			[<p class="#EDIT{descriptif} descriptif">(#DESCRIPTIF|PtoBR)</p>]
+		</li>
+		</BOUCLE_documents>
+	</ul>
+</div><!--.documents-->
+</B_documents>

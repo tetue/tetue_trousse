@@ -1,0 +1,5 @@
+<BOUCLE_document(DOCUMENTS){id_document}><span class="download"><a href="#URL_DOCUMENT" type="#MIME_TYPE" title="<:bouton_telecharger:>[ (#FICHIER|basename)]" class="spip_doc[ (#EXTENSION|attribut_html)]">
+[<img src="(#CHEMIN{vignettes/#EXTENSION.png}|image_reduire{40}|extraire_attribut{src})" class="spip_logos" />]
+[<strong class="#EDIT{titre} titre">(#TITRE|sinon{[(#FICHIER|basename)]})</strong>]</a></span>
+<small class="info_document">([<abbr[ title="<:info_document:> (#TYPE_DOCUMENT)"] class="ext">(#EXTENSION|strtoupper)</abbr> &ndash; ][<strong>(#TAILLE|taille_en_octets)</strong>][(#LARGEUR|?{[ &ndash; (#LARGEUR)[ x (#HAUTEUR) pixels]],''})])[ &ndash; (#DATE|affdate{d/m/y})].</small>
+[<div class="#EDIT{descriptif} descriptif">(#DESCRIPTIF)</div>]</BOUCLE_document>

@@ -1,7 +1,7 @@
 <?php
 
 function tetue_trousse_insert_head_css($flux) {
-	$flux .= '<link rel="stylesheet" type="text/css" href="'.find_in_path('tetue_trousse.css').'" media="all" />'."\n";
+	$flux .= '<link rel="stylesheet" type="text/css" href="'.find_in_path('css/tetue_trousse.css').'" media="all" />'."\n";
 	return $flux;
 }
 

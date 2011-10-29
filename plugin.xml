@@ -3,7 +3,7 @@
 <icon>icon.png</icon>
 <description>R&eacute;glages par d&eacute;faut, corrections typographiques, mod&egrave;les pour pages annexes (plan de site, accesskey, formulaire de contact, etc.) et autres pr&eacute;f&eacute;rences.</description>
 <lien>[Qu'y a-t-il dans la trousse &agrave; T&ecirc;tue&nbsp;?->http://romy.tetue.net/tetue_trousse]</lien>
-<version>2.2.2</version>
+<version>2.2.3</version>
 <etat>stable</etat>
 <auteur>[romy.tetue.net->http://romy.tetue.net] - 2009 - Ce plugin inclut des contributions de [Cedric Morin->http://www.spip-contrib.net/?auteur5384], [Fil->http://www.spip-contrib.net/?auteur4] et [James->http://www.spip-contrib.net/?auteur178], distribu&eacute;es en sous licence GPL.</auteur>
 <prefix>tetue_trousse</prefix>
@@ -26,7 +26,6 @@
 	<inclure>tetue_trousse_pipelines.php</inclure>
 </pipeline>
 <necessite id='SPIP' version='[2.1.0;]' />
-<necessite id="courtcircuit" version="[;]" />
 <utilise id="Z" version="[;]" />
 <utilise id="enluminures_typographiques_v3" version="[;]" />
 <categorie>outil</categorie>

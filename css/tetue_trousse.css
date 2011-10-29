@@ -24,4 +24,18 @@
 /* accesskey */
 /*a[accesskey]:after { background: transparent; content: "\0000a0(" attr(accesskey) ")"; }*/
 
+/* table_admin */
+.table_admin { width: 100%; }
+.table_admin th,
+.table_admin td { padding: .3em; border-bottom: 1px solid #ccc; }
+.table_admin th { background: #666; vertical-align: bottom; }
+.table_admin th, .table_admin th * { color: #FFF; }
+.table_admin tr:nth-child(2n) { background-color: rgba(238,238,238,.25); }
+.table_admin tr.off { background-image: url(img/bg/hachures.png); }
+.table_admin tr.off * { color: #999; }
+.table_admin tr:hover { background-color: rgba(255,170,0,.5); }
+.table_admin td { vertical-align: top; }
+.table_admin tr:nth-child(2n) td { background: none; }
+.table_admin .id { text-align: right; padding-right: 0; }
+
 /* end */

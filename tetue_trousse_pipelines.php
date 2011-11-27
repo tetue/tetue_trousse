@@ -21,6 +21,8 @@ function tetue_trousse_pre_typo($texte) {
  */
 
 function tetue_trousse_pre_boucle(&$boucle){
+// deja integre dans SPIP3 et code pas compatible qui plus est
+if (intval($GLOBALS['spip_version_branche'])<3){ 
 	$id_table = $boucle->id_table;
 	$mstatut = $id_table .'.statut';
 	if (!isset($boucle->modificateur['criteres']['statut'])){
@@ -36,6 +38,7 @@ function tetue_trousse_pre_boucle(&$boucle){
 				break;
 		}
 	}
+}
 	return $boucle;
 }
 
